@@ -1,23 +1,22 @@
 
 
+export default function editPage() {
 
-export default function addTodo() {
-
-    return(
+    return (
         <form className="flex flex-col gap-3">
             <input className="border border-slate-500 px-8 py-2 rounded-md" 
                 type="text"
-                placeholder="Type title.." 
+                placeholder="Edit title.." 
                 />
             <input 
                 className="border border-slate-500 px-8 py-2 rounded-md"
                 type="text"
-                placeholder="Type description.." 
+                placeholder="Edit description.." 
                 />
             <button 
                 className="bg-green-500 py-3 font-bold text-white  hover:shadow-lg hover:text-emerald-200 rounded-md"
                 type="submit"
-                >Create Turtle</button>
+                >Update Turtle</button>
         </form>
     )
 }

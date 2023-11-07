@@ -1,5 +1,6 @@
 import { HiPencilAlt } from 'react-icons/hi'
 import DeleteBtn from './DeleteBtn'
+import Link from 'next/link'
 
 export default function Todo() {
 
@@ -11,7 +12,7 @@ export default function Todo() {
                     <p>This todo will become dynamic</p>
                 </div>
                 <div className='flex gap-2'>
-                    <HiPencilAlt size={24}/>
+                    <Link className='text-green-400' href='/edit/123' ><HiPencilAlt size={24}/></Link>
                     <DeleteBtn />
                 </div>
             </div>
